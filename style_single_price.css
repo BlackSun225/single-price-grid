@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Karla";
+  src: url("Karla-VariableFont_wght.ttf") format("TrueType");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(204, 43%, 93%);
+  font-family: "Karla";
+}
+
+.top{
+    background: white;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 10px 14px 1px hsl(204, 4%, 77%);
+  }
+.top h1 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+.top h2 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 20px;
+    text-shadow: 0 0 1px yellow;
+    font-size: 20px;
+  }
+.top p {
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    line-height: 27px;
+  }  
+
+.left {
+    background: hsl(179, 62%, 43%);
+  }
+.left h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+.left div {
+    color: white;
+    position: relative;
+    margin-bottom: 10px;
+  }
+#num {
+    display: inline-block;
+    color: white;
+    font-size: 40px;
+    margin-right: 10px;
+    opacity: 1;
+  }
+#write{
+    opacity: 0.5;
+    display: inline-block;
+    position: relative;
+    bottom: 7px;
+    font-size: 17px;
+  }
+.left h3 {
+    color: white;
+    font-weight: 200;
+    opacity: 0.8;
+    margin-bottom: 40px;
+  }
+.left a {
+    display: block;  
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    background: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 10px 14px 1px hsl(179, 57%, 36%);
+  }
+
+.right h2 {
+    color: white;
+  }
+.right p {
+    color: white;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.8;
+  }
+.right {
+    background: hsl(179, 42%, 63%);
+}
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 100px 0;
+    background: hsl(204, 43%, 93%);
+    font-family: "Karla";
+  }
+
+  .top, .left, .right{
+    width: 85%;
+    height: 280px;
+    margin: 0 auto;
+    padding: 25px;
+  }
+ 
+  .right {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .main {
+    width: 49%;
+    height: 500px;
+    margin: 55px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 10px 14px 1px hsl(204, 4%, 77%);
+  }
+
+  .top, .left, .right {
+    padding: 35px;
+  }
+
+  .top{
+    flex: 100%;
+  }
+
+  .left, .right {
+    flex: 50%;
+  }
+
+  .left {
+    border-radius: 0 0 0 5px;
+  }
+  .left h3 {
+    font-size: 15px;
+  }
+  .left a {
+    display: block;
+    margin-left: -1px;
+  }
+
+
+  .right {
+    border-radius: 0 0 5px 0;
+  }
+}
